@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Neemias Braga
 
-## Getting Started
+Este é meu portfolio profissional desenvolvido com Next.js 14, React e Tailwind CSS.
 
-First, run the development server:
+## 📦 Instalação
 
+### Método Recomendado
+
+1. Clique no botão "Add to Codebase" (ícone de Terminal) no canto superior direito do bloco de código no v0.
+2. Siga as instruções do assistente de instalação para criar um novo projeto ou adicionar a um projeto existente.
+
+### Instalação Manual
+
+Se você preferir instalar manualmente, siga estas etapas:
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <seu-repositorio>
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+## 🛠️ Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js 14](https://nextjs.org/) - Framework React
+- [React](https://reactjs.org/) - Biblioteca JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
+- [Lucide Icons](https://lucide.dev/) - Ícones
+- TypeScript - Linguagem de programação
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+portfolio/
+├── app/
+│   └── page.tsx
+├── components/
+│   ├── About.tsx
+│   ├── AnimatedBackground.tsx
+│   ├── Contact.tsx
+│   ├── DarkModeToggle.tsx
+│   ├── Education.tsx
+│   ├── Experience.tsx
+│   ├── Header.tsx
+│   └── Skills.tsx
+├── public/
+│   └── [suas-imagens]
+└── README.md
+```
 
-## Deploy on Vercel
+## 🚀 Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para fazer o deploy do seu portfolio:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Crie uma conta no [Vercel](https://vercel.com)
+2. Conecte seu repositório
+3. Clique em "Deploy"
+
+## 🎨 Personalização
+
+Para personalizar o portfolio:
+
+1. Atualize as informações pessoais nos componentes
+2. Modifique as cores no arquivo `tailwind.config.js`
+3. Adicione suas próprias imagens na pasta `public`
+4. Ajuste o conteúdo em cada componente conforme necessário
+
+## 🌙 Dark Mode
+
+O projeto inclui suporte a dark mode que:
+- Persiste a preferência do usuário
+- Pode ser alternado através do botão no canto superior direito
+- Adapta automaticamente todos os componentes
+
+## 📱 Responsividade
+
+O portfolio é totalmente responsivo e se adapta a:
+- Dispositivos móveis
+- Tablets
+- Desktops
+- Telas maiores
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para:
+
+1. Fazer um fork do projeto
+2. Criar uma branch para sua feature
+3. Commitar suas mudanças
+4. Fazer push para a branch
+5. Abrir um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+## 📞 Contato
+
+- Email: neemiasbragadev@gmail.com
+- LinkedIn: [linkedin.com/in/neemiasbragadev](https://www.linkedin.com/in/neemiasbragadev/)
+- GitHub: [github.com/neemiasbragadev](https://github.com/neemiasbragadev)
+```
+
+Para qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato!
