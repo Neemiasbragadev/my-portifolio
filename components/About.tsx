@@ -19,7 +19,7 @@ export default function About() {
           priority
         />
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-          Graduado em Analise e Desenvolvimento, sou um profissional com experiência em desenvolvimento de software, gestão de projetos e liderança de equipes. Especializado em
+          Graduado em Analise e Desenvolvimento de Sistemas, sou um profissional com experiência em desenvolvimento de software, gestão de projetos e liderança de equipes. Especializado em
           PHP, Laravel, SQL, Análise de Requisitos e tecnologias de front-end, busco oportunidades para aplicar meus
           conhecimentos e habilidades, contribuindo para o crescimento e sucesso das organizações.
         </p>
