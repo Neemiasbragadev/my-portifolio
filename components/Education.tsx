@@ -10,15 +10,11 @@ export default function Education() {
       <ul className="space-y-2 text-gray-300">
         <li className="flex items-center">
           <span className="w-3 h-3 bg-cyan-300 rounded-full mr-2"></span>
-          Grad. em Análise e Desenvolvimento de Sistemas: Unicesumar
+          Graduação em Análise e Desenvolvimento de Sistemas — Unicesumar
         </li>
         <li className="flex items-center">
           <span className="w-3 h-3 bg-cyan-300 rounded-full mr-2"></span>
-          Técnico em Informática para internet: Instituto Federal do Rio de Janeiro (IFRJ)
-        </li>
-        <li className="flex items-center">
-          <span className="w-3 h-3 bg-cyan-300 rounded-full mr-2"></span>
-          Ensino Médio: Colégio Estadual João Kopke
+          Técnico em Informática para Internet — Instituto Federal do Rio de Janeiro (IFRJ)
         </li>
       </ul>
     </section>

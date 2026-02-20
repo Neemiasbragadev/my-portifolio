@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react'
+import { Mail, Phone, Linkedin, Github, MapPin, Globe } from 'lucide-react'
 
 export default function Contact() {
   return (
@@ -22,14 +22,19 @@ export default function Contact() {
           <a href="https://github.com/neemiasbragadev" className="text-cyan-200 underline">github.com/neemiasbragadev</a>
         </li>
         <li className="flex items-center gap-3">
+          <Globe className="w-5 h-5 text-cyan-300" />
+          <a href="https://neemiasbragadev.vercel.app/" className="text-cyan-200 underline">neemiasbragadev.vercel.app</a>
+        </li>
+        <li className="flex items-center gap-3">
           <MapPin className="w-5 h-5 text-cyan-300" />
-          <span>Independência, Mendes, RJ</span>
+          <span>Rio de Janeiro (RJ) • Independência - Mendes</span>
         </li>
       </ul>
 
-      <div className="mt-4 flex gap-3">
+      <div className="mt-4 flex flex-wrap gap-3">
         <a className="btn-neon" href="mailto:neemiasbragadev@gmail.com">Enviar E-mail</a>
-        <a className="btn-neon" href="https://github.com/neemiasbragadev">Ver Projetos</a>
+        <a className="btn-neon" href="https://www.linkedin.com/in/neemiasbragadev/">LinkedIn</a>
+        <a className="btn-neon" href="https://github.com/neemiasbragadev">GitHub</a>
       </div>
     </section>
   )

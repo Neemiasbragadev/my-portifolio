@@ -20,8 +20,9 @@ export default function About() {
         />
         <div>
           <p className="text-gray-300 leading-relaxed mb-4">
-            Graduado em Análise e Desenvolvimento de Sistemas, sou um profissional com experiência em desenvolvimento de software, gestão de projetos e liderança de equipes. Especializado em
-            PHP, Laravel, SQL e tecnologias modernas de front-end, busco oportunidades para aplicar meus conhecimentos e entregar soluções de alto impacto.
+            Desenvolvedor PHP / FullStack com mais de 5 anos de experiência em sistemas web voltados para órgãos públicos e empresas privadas. Atuação destacada no Exército Brasileiro, com foco em
+            Laravel, PHP e MySQL, além de boas práticas de arquitetura e segurança de software. Tenho experiência com metodologias ágeis (Scrum) e gestão de serviços de TI (ITIL), com forte habilidade
+            em analisar, otimizar e integrar sistemas legados com novas tecnologias, garantindo eficiência e confiabilidade.
           </p>
           <div className="flex gap-3">
             <a href="#contact" className="btn-neon">Contratar</a>

@@ -9,8 +9,8 @@ export default function Header() {
             <Code className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold neon-text">Neemias Braga</h1>
-            <p className="text-sm text-gray-300">Desenvolvedor FullStack</p>
+            <h1 className="text-xl font-bold neon-text">Neemias Braga Kelly dos Santos</h1>
+            <p className="text-sm text-gray-300">Desenvolvedor PHP / FullStack • Laravel • MySQL</p>
           </div>
         </div>
 
