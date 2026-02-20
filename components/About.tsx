@@ -4,10 +4,10 @@ import PerfilLinkedin from '/public/imagens/PerfilLinkedin.jpeg'
 
 export default function About() {
   return (
-    <section className="mb-12 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-colors duration-200">
+    <section id="about" className="mb-12 glass-card p-6 rounded-xl transition-colors duration-200">
       <div className="flex items-center mb-4">
-        <User className="w-6 h-6 mr-2 text-blue-600 dark:text-blue-400" />
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-white">Sobre Mim</h2>
+        <User className="w-6 h-6 mr-2 text-cyan-300" />
+        <h2 className="text-2xl font-bold text-gray-100">Sobre Mim</h2>
       </div>
       <div className="flex flex-col md:flex-row gap-6 items-start mb-6">
         <Image
@@ -15,14 +15,19 @@ export default function About() {
           alt="Profile photo"
           width={200}
           height={200}
-          className="rounded-full shadow-lg"
+          className="rounded-full shadow-xl border border-white/5"
           priority
         />
-        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-          Graduado em Analise e Desenvolvimento de Sistemas, sou um profissional com experiência em desenvolvimento de software, gestão de projetos e liderança de equipes. Especializado em
-          PHP, Laravel, SQL, Análise de Requisitos e tecnologias de front-end, busco oportunidades para aplicar meus
-          conhecimentos e habilidades, contribuindo para o crescimento e sucesso das organizações.
-        </p>
+        <div>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Graduado em Análise e Desenvolvimento de Sistemas, sou um profissional com experiência em desenvolvimento de software, gestão de projetos e liderança de equipes. Especializado em
+            PHP, Laravel, SQL e tecnologias modernas de front-end, busco oportunidades para aplicar meus conhecimentos e entregar soluções de alto impacto.
+          </p>
+          <div className="flex gap-3">
+            <a href="#contact" className="btn-neon">Contratar</a>
+            <a href="#experience" className="text-sm text-gray-300 underline">Ver Experiência</a>
+          </div>
+        </div>
       </div>
     </section>
   )

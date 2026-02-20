@@ -4,65 +4,32 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 15% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
+    --card: 255 255 255 / 4%;
     --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
-    --radius: 0.5rem;
+    --primary: 190 100% 50%; /* cyan */
+    --accent: 265 85% 60%; /* purple */
+
+    --glass-border: rgba(255,255,255,0.08);
+    --glass-bg: rgba(255,255,255,0.03);
+    --glass-bg-2: rgba(255,255,255,0.02);
+
+    --radius: 0.75rem;
   }
  
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
+
+    --card: 0 0% 0%;
     --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+
+    --glass-border: rgba(255,255,255,0.06);
+    --glass-bg: rgba(255,255,255,0.02);
+    --glass-bg-2: rgba(255,255,255,0.01);
   }
 }
  
@@ -70,8 +37,132 @@
   * {
     @apply border-border;
   }
+  html, body, #__next {
+    height: 100%;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(56,189,248,0.06), transparent 6%),
+                radial-gradient(800px 400px at 90% 90%, rgba(139,92,246,0.04), transparent 8%),
+                hsl(var(--background));
+    background-color: hsl(var(--background));
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    color: hsl(var(--foreground));
+  }
+
+  .glass-header {
+    background: linear-gradient(90deg, rgba(14,165,233,0.06), rgba(139,92,246,0.06));
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    backdrop-filter: blur(6px);
+  }
+
+  .neon-text {
+    background: linear-gradient(90deg, #7dd3fc, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-neon {
+    background: linear-gradient(90deg, rgba(125,211,252,0.08), rgba(192,132,252,0.08));
+    border: 1px solid rgba(125,211,252,0.12);
+    padding: 0.5rem 0.85rem;
+    border-radius: 9999px;
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 220 15% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 255 255 255 / 4%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --primary: 190 100% 50%; /* cyan */
+    --accent: 265 85% 60%; /* purple */
+
+    --glass-border: rgba(255,255,255,0.08);
+    --glass-bg: rgba(255,255,255,0.03);
+    --glass-bg-2: rgba(255,255,255,0.02);
+
+    --radius: 0.75rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 210 40% 98%;
+
+    --glass-border: rgba(255,255,255,0.06);
+    --glass-bg: rgba(255,255,255,0.02);
+    --glass-bg-2: rgba(255,255,255,0.01);
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html, body, #__next {
+    height: 100%;
+  }
+  body {
+    @apply text-foreground;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(56,189,248,0.06), transparent 6%),
+                radial-gradient(800px 400px at 90% 90%, rgba(139,92,246,0.04), transparent 8%),
+                hsl(var(--background));
+    background-color: hsl(var(--background));
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+    color: hsl(var(--foreground));
+  }
+
+  .glass-header {
+    background: linear-gradient(90deg, rgba(14,165,233,0.06), rgba(139,92,246,0.06));
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    backdrop-filter: blur(6px);
+  }
+
+  .neon-text {
+    background: linear-gradient(90deg, #7dd3fc, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-neon {
+    background: linear-gradient(90deg, rgba(125,211,252,0.08), rgba(192,132,252,0.08));
+    border: 1px solid rgba(125,211,252,0.12);
+    padding: 0.5rem 0.85rem;
+    border-radius: 9999px;
   }
 }
 

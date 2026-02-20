@@ -2,30 +2,35 @@ import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-colors duration-200">
-      <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Contato</h2>
-      <ul className="space-y-3 text-gray-600 dark:text-gray-300">
-        <li className="flex items-center">
-          <Phone className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          (24) 99263-3921
+    <section id="contact" className="glass-card p-6 rounded-xl transition-colors duration-200">
+      <h2 className="text-2xl font-bold mb-4 text-gray-100">Contato</h2>
+      <ul className="space-y-3 text-gray-300">
+        <li className="flex items-center gap-3">
+          <Phone className="w-5 h-5 text-cyan-300" />
+          <span>(24) 99263-3921</span>
         </li>
-        <li className="flex items-center">
-          <Mail className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          neemiasbragadev@gmail.com
+        <li className="flex items-center gap-3">
+          <Mail className="w-5 h-5 text-cyan-300" />
+          <span>neemiasbragadev@gmail.com</span>
         </li>
-        <li className="flex items-center">
-          <Linkedin className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          <a href="https://www.linkedin.com/in/neemiasbragadev/" className="text-blue-600 dark:text-blue-400 hover:underline">linkedin.com/in/neemiasbragadev</a>
+        <li className="flex items-center gap-3">
+          <Linkedin className="w-5 h-5 text-cyan-300" />
+          <a href="https://www.linkedin.com/in/neemiasbragadev/" className="text-cyan-200 underline">linkedin.com/in/neemiasbragadev</a>
         </li>
-        <li className="flex items-center">
-          <Github className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          <a href="https://github.com/neemiasbragadev" className="text-blue-600 dark:text-blue-400 hover:underline">github.com/neemiasbragadev</a>
+        <li className="flex items-center gap-3">
+          <Github className="w-5 h-5 text-cyan-300" />
+          <a href="https://github.com/neemiasbragadev" className="text-cyan-200 underline">github.com/neemiasbragadev</a>
         </li>
-        <li className="flex items-center">
-          <MapPin className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
-          Independência, Mendes, RJ
+        <li className="flex items-center gap-3">
+          <MapPin className="w-5 h-5 text-cyan-300" />
+          <span>Independência, Mendes, RJ</span>
         </li>
       </ul>
+
+      <div className="mt-4 flex gap-3">
+        <a className="btn-neon" href="mailto:neemiasbragadev@gmail.com">Enviar E-mail</a>
+        <a className="btn-neon" href="https://github.com/neemiasbragadev">Ver Projetos</a>
+      </div>
     </section>
   )
 }
