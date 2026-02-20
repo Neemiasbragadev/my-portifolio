@@ -63,8 +63,10 @@ export default function AnimatedBackground() {
 
     function init() {
       particles = [];
+      const c = canvasRef.current;
+      if (!c) return;
       for (let i = 0; i < particleCount; i++) {
-        particles.push(new Particle(canvas));
+        particles.push(new Particle(c));
       }
     }
 
