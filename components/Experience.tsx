@@ -22,7 +22,7 @@ export default function Experience() {
           <li>Atuação em ambiente ágil (Scrum), participando de planejamentos e entregas contínuas</li>
         </ul>
       </article>
-    </div>
+    
 
         <article className="p-4 bg-transparent border-l-2 border-purple-400/30 rounded pl-4">
           <h3 className="text-lg font-semibold text-purple-200">Analista Desenvolvedor FullStack</h3>
