@@ -10,7 +10,7 @@ export default function Experience() {
      <div className="mb-6 space-y-4">
       <article className="p-4 bg-transparent border-l-2 border-cyan-400/30 rounded pl-4">
         <h3 className="text-lg font-semibold text-cyan-200">Analista Programador PHP Sênior</h3>
-        <p className="text-sm text-gray-300">BASIS (alocado no TRF2) | Nov 2025</p>
+        <p className="text-sm text-gray-300">BASIS (alocado no TRF2) | Nov 2025 – Atualmente</p>
         <ul className="list-disc list-inside text-gray-300 mt-2 space-y-1">
           <li>Desenvolvimento e manutenção de sistemas web de missão crítica utilizando PHP (Laravel)</li>
           <li>Evolução e sustentação de sistemas legados, incluindo refatoração de código e melhorias de arquitetura</li>
