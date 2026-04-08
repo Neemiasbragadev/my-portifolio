@@ -7,17 +7,22 @@ export default function Experience() {
         <Briefcase className="w-6 h-6 mr-2 text-cyan-300" />
         <h2 className="text-2xl font-bold text-gray-100">Experiência Profissional</h2>
       </div>
-      <div className="mb-6 space-y-4">
-        <article className="p-4 bg-transparent border-l-2 border-cyan-400/30 rounded pl-4">
-          <h3 className="text-lg font-semibold text-cyan-200">Analista Programador PHP Sênior</h3>
-          <p className="text-sm text-gray-300">BASIS (alocado no TRF2) | Fev 2023 - Nov 2025</p>
-          <ul className="list-disc list-inside text-gray-300 mt-2 space-y-1">
-            <li>Desenvolvimento e manutenção de sistemas web utilizando PHP</li>
-            <li>Correção de sistemas para atender às necessidades dos usuários</li>
-            <li>Suporte e assistência à equipe de análise de sistemas</li>
-            <li>Análise de desempenho e resolução de problemas técnicos</li>
-          </ul>
-        </article>
+     <div className="mb-6 space-y-4">
+      <article className="p-4 bg-transparent border-l-2 border-cyan-400/30 rounded pl-4">
+        <h3 className="text-lg font-semibold text-cyan-200">Analista Programador PHP Sênior</h3>
+        <p className="text-sm text-gray-300">BASIS (alocado no TRF2) | Nov 2025</p>
+        <ul className="list-disc list-inside text-gray-300 mt-2 space-y-1">
+          <li>Desenvolvimento e manutenção de sistemas web de missão crítica utilizando PHP (Laravel)</li>
+          <li>Evolução e sustentação de sistemas legados, incluindo refatoração de código e melhorias de arquitetura</li>
+          <li>Levantamento e análise de requisitos junto às áreas de negócio, propondo soluções técnicas eficientes</li>
+          <li>Implementação de integrações com APIs REST e serviços governamentais</li>
+          <li>Otimização de consultas e rotinas em banco de dados (MySQL/PL-SQL), melhorando performance do sistema</li>
+          <li>Identificação e correção de bugs complexos em ambiente de produção (troubleshooting)</li>
+          <li>Apoio técnico à equipe com revisão de código e disseminação de boas práticas</li>
+          <li>Atuação em ambiente ágil (Scrum), participando de planejamentos e entregas contínuas</li>
+        </ul>
+      </article>
+    </div>
 
         <article className="p-4 bg-transparent border-l-2 border-purple-400/30 rounded pl-4">
           <h3 className="text-lg font-semibold text-purple-200">Analista Desenvolvedor FullStack</h3>
