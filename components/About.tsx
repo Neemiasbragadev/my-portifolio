@@ -25,7 +25,7 @@ export default function About() {
             em analisar, otimizar e integrar sistemas legados com novas tecnologias, garantindo eficiência e confiabilidade.
           </p>
           <div className="flex gap-3">
-            <a href="#contact" className="btn-neon">Contratar</a>
+            <a href="#contact" className="btn-neon">Contatar</a>
             <a href="#experience" className="text-sm text-gray-300 underline">Ver Experiência</a>
           </div>
         </div>
